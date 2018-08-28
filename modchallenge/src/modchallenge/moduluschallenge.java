@@ -8,14 +8,12 @@ public class moduluschallenge
 		public static void main(String[] args)
 			{
 				challenge();
+				challenge2();
 
 			}
 
 		private static void challenge()
 			{
-				while(true)
-					
-					
 					{
 						System.out.println("Pick a year!");
 						Scanner userInput = new Scanner(System.in);
@@ -43,6 +41,32 @@ public class moduluschallenge
 									}
 							}
 					}
+				
+			}
+		private static void challenge2()
+			{
+				for (int counting = 1; counting <= 100; counting ++)
+					{
+						
+						if(counting % 3 == 0 && counting % 5 == 0)
+							{
+								System.out.println("FizzBuzz");
+							}
+						else if(counting % 3 == 0)
+							{
+								System.out.println("Fizz");
+							}
+						else if(counting % 5 == 0)
+							{
+								System.out.println("Buzz");
+							}
+						else
+							{
+								System.out.println(counting);
+							}
+							
+					}
+				
 				
 			}
 
